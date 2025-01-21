@@ -13,7 +13,7 @@ const GameArea = () => {
 
   useEffect(() => {
     // Establish WebSocket connection
-    const ws = new WebSocket("ws://bounce-websocket.onrender.com");
+    const ws = new WebSocket("ws://localhost:8081");
 
     ws.onopen = () => {
       console.log("Connected to WebSocket server");
